@@ -1065,35 +1065,44 @@ h3 {
   }
 
   .facts .section-heading {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
   }
 
   .facts .section-heading h2 {
-    max-width: 300px;
-    font-size: clamp(30px, 10vw, 38px);
+    max-width: 100%;
+    font-size: clamp(28px, 9.2vw, 34px);
     line-height: .98;
+    text-align: left;
   }
 
   .fact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
+    gap: 7px;
+    align-items: stretch;
   }
 
   .fact-grid article {
-    min-height: 92px;
-    padding: 13px 12px;
-    border-radius: 22px;
+    min-width: 0;
+    min-height: 82px;
+    padding: 11px 10px;
+    border-radius: 18px;
+    display: grid;
+    align-content: start;
   }
 
   .fact-grid span {
-    font-size: 10px;
+    font-size: 9px;
     line-height: 1.15;
+    overflow-wrap: anywhere;
   }
 
   .fact-grid strong {
-    margin-top: 10px;
-    font-size: clamp(18px, 5.5vw, 22px);
+    min-width: 0;
+    margin-top: 8px;
+    font-size: clamp(16px, 4.8vw, 19px);
     line-height: 1.05;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   h2 {
@@ -1141,14 +1150,22 @@ h3 {
   .included-grid article,
   .booking-steps article {
     min-height: auto;
-    padding: 20px;
+    padding: 18px;
     border-radius: 24px;
   }
 
   .included {
-    padding: 58px 12px;
+    padding: 30px 12px 42px;
     border-radius: 30px;
     overflow: hidden;
+  }
+
+  .included .section-heading {
+    margin-bottom: 18px;
+  }
+
+  .included .section-heading h2 {
+    font-size: clamp(32px, 10vw, 42px);
   }
 
   .included .section-heading,
