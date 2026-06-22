@@ -1177,6 +1177,10 @@ h3 {
     margin-top: 8px;
   }
 
+  .route-heading p:not(.eyebrow) {
+    margin-top: 12px;
+  }
+
   .day-card {
     overflow: hidden;
     padding: 12px;
